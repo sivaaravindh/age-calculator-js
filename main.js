@@ -6,7 +6,6 @@ submit.addEventListener("click",()=>{
     let currentday=new Date();
     age.innerText=
     `${currentday.getFullYear()-birthday.getFullYear()
-        } years ${currentday.getMonth()-birthday.getMonth()
-        } Months ${currentday.getDate()-birthday.getDate()} 
-        Days`;
+        } years ${Math.abs(currentday.getMonth()-birthday.getMonth())
+        } Months ${Math.abs(currentday.getDate()-birthday.getDate())}  Days`;
 })
